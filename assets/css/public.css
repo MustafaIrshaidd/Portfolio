@@ -1,0 +1,24 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* public */
+
+:root {
+    --central-container--width: 75%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.centralized-container {
+    margin: auto;
+    width: var(--central-container--width);
+}
+
+ul {
+    list-style: none;
+}
