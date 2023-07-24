@@ -6,6 +6,7 @@
 
 :root {
     --central-container--width: 75%;
+    --light: #ffffff;
 }
 
 * {
