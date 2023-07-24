@@ -1,0 +1,79 @@
+header {
+    background-image: url(/assets/images/bg-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header Layout */
+
+header .centralized-container {
+    height: 100vh;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header-content & header-img */
+
+.header-img--sizing {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.header-content {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-content--hello {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-content--hello span {
+    font-weight: 800;
+}
+
+.header-content h1 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.header-content h1::before {
+    content: "I'm "
+}
+
+/* media query for resposivisity */
+
+@media only screen and (min-width:768px) {
+    header .centralized-container {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .header-content {
+        text-align: start;
+
+    }
+
+    .header-img--sizing {
+        width: 264px;
+        height: 264px;
+    }
+
+    .header-content--hello {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    header .centralized-container {
+        gap: 20%;
+    }
+}
