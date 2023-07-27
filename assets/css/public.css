@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+::selection{
+    background-color: transparent;
+}
+
 .centralized-container {
     margin: auto;
     width: var(--central-container--width);
