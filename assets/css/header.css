@@ -1,21 +1,6 @@
 header {
-  background-image: linear-gradient(
-    90deg,
-    hsl(0deg 0% 51%) 0%,
-    hsl(344deg 0% 50%) 12%,
-    hsl(344deg 0% 48%) 22%,
-    hsl(344deg 0% 47%) 30%,
-    hsl(344deg 0% 50%) 38%,
-    hsl(344deg 0% 53%) 44%,
-    hsl(344deg 0% 57%) 50%,
-    hsl(344deg 0% 61%) 55%,
-    hsl(344deg 0% 65%) 61%,
-    hsl(344deg 0% 70%) 66%,
-    hsl(344deg 0% 75%) 72%,
-    hsl(344deg 0% 83%) 78%,
-    hsl(344deg 0% 92%) 87%,
-    hsl(0deg 0% 100%) 100%
-  );
+  background-image: var(--linear-gradient--darkGrey);
+  scroll-snap-align: start;
 }
 
 /* Header Layout */
@@ -42,7 +27,7 @@ header .centralized-container {
 
 .header-content {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .header-content--hello {
@@ -89,6 +74,4 @@ header .centralized-container {
   header .centralized-container {
     gap: 20%;
   }
-
-  
 }
