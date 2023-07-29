@@ -63,6 +63,23 @@
         hsl(294deg 96% 93%) 92%,
         hsl(0deg 0% 100%) 100%
       );
+
+      --linear-gradient--skyBlue:linear-gradient(
+        90deg,
+        hsl(202deg 68% 45%) 0%,
+        hsl(202deg 54% 52%) 8%,
+        hsl(202deg 54% 59%) 17%,
+        hsl(202deg 55% 65%) 25%,
+        hsl(204deg 62% 71%) 33%,
+        hsl(206deg 72% 77%) 42%,
+        hsl(209deg 89% 82%) 50%,
+        hsl(211deg 91% 85%) 58%,
+        hsl(213deg 93% 88%) 67%,
+        hsl(215deg 96% 91%) 75%,
+        hsl(216deg 96% 94%) 83%,
+        hsl(216deg 97% 97%) 92%,
+        hsl(0deg 0% 100%) 100%
+      );
 }
 
 * {

@@ -1,0 +1,8 @@
+.projects {
+    scroll-snap-align: start;
+    background-image: var(--linear-gradient--skyBlue);
+}
+
+.projects .centralized-container{
+    height: 100vh;
+}
