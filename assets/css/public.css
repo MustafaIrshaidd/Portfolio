@@ -46,6 +46,23 @@
         hsl(205deg 99% 93%) 92%,
         hsl(0deg 0% 100%) 100%
       );
+
+    --linear-gradient--pinky:linear-gradient(
+        90deg,
+        hsl(296deg 41% 45%) 0%,
+        hsl(297deg 38% 50%) 8%,
+        hsl(298deg 45% 55%) 17%,
+        hsl(299deg 53% 61%) 25%,
+        hsl(296deg 61% 64%) 33%,
+        hsl(294deg 70% 66%) 42%,
+        hsl(292deg 81% 69%) 50%,
+        hsl(291deg 84% 72%) 58%,
+        hsl(291deg 88% 75%) 67%,
+        hsl(291deg 93% 78%) 75%,
+        hsl(292deg 94% 85%) 83%,
+        hsl(294deg 96% 93%) 92%,
+        hsl(0deg 0% 100%) 100%
+      );
 }
 
 * {
@@ -65,6 +82,10 @@
 
 ul {
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 main{

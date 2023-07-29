@@ -1,5 +1,6 @@
 nav {
   position: relative;
+  z-index:9999;
 }
 
 nav ul,
@@ -205,7 +206,7 @@ nav ul li:nth-of-type(5) {
     transform: translateX(-100px);
   }
 
-  ul li {
+  nav ul li {
     height: 55px;
   }
 }
