@@ -1,0 +1,97 @@
+.contact {
+  scroll-snap-align: start;
+  font-family: "Inter", sans-serif;
+}
+
+.contact ::selection {
+  background-color: highlight;
+}
+
+.contact .centralized-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.contact .name {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  width: 100%;
+}
+
+.contact .name .first-name,
+.contact .name .last-name,
+.contact .email,
+.contact .message {
+  position: relative;
+}
+
+.contact .name .first-name label,
+.contact .name .last-name label,
+.contact .email label,
+.contact .message label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact .name .first-name label,
+.contact .name .last-name label,
+.contact .email label {
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.contact .message label {
+  left: 30px;
+  top: 5%;
+}
+
+.contact input,
+.contact .message textarea {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.contact .email input,
+.contact .message input {
+  width: 100%;
+}
+
+.contact .message textarea {
+  height: 15vh;
+  resize: none;
+  min-width: 100%;
+}
+
+.contact-form .name input:focus ~ label {
+  top: -15px;
+  left: 12px;
+  color: var(--light);
+}
+
+.contact-form input {
+  transition: all 0.3s;
+}
+
+.contact-form .name input:focus {
+  background-color: transparent;
+}
+
+.contact label {
+  transition: all 0.3s;
+}
+
+.contact textarea:focus ~ label {
+}

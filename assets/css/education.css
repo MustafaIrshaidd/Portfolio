@@ -1,54 +1,70 @@
 .education {
   scroll-snap-align: start;
-  background-image: var(--linear-gradient--pinky);
 }
 
 .education .centralized-container {
-  height: 270vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: start;
-  gap: 4%;
+  padding: 20vh 0 80vh 0;
 }
-
-/* education intervals */
 
 .education-intervals {
   position: relative;
   height: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
 }
 
-.education-intervals::after {
+.education-intervals > li {
+  position: relative;
+}
+
+.education-intervals-links-container {
   position: absolute;
-  content: "";
-  width: 2px;
-  height: 155vh;
-  bottom: 40px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-color: rgba(255, 255, 255, 0.225);
+  width: fit-content;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2.5rem;
+  overflow: visible;
 }
 
-.education-intervals li {
+.education-intervals-links-container .education-intervals-links {
   background-color: var(--light);
   border-radius: 10px;
   position: sticky;
   top: 200px;
+  bottom: 0.25rem;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
 }
 
-.education-intervals li:nth-of-type(1):after {
-  position: absolute;
+.education-intervals li:nth-of-type(1) .education-intervals-links::after {
   content: "";
-  left: 50%;
+  position: absolute;
+  z-index: -3;
+  left: 0;
+  top: 0;
   width: 77px;
-  height: 83vh;
-  bottom: -122vh;
-  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.225);
+}
+
+.education-intervals li:nth-last-of-type(1) .education-intervals-links::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  height: 175vh;
+  background-color: rgba(255, 255, 255, 0.499);
 }
 
 .education-intervals:not(:last-child) li {
@@ -74,9 +90,9 @@
 /* Content */
 
 .education-content {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: -60vw;
+  margin-bottom: 2.5rem;
 }
 
 .education-intervals .education-content li:nth-of-type(1):after {
@@ -93,15 +109,12 @@
   line-height: 30px;
 }
 
-.education-content li::before{
-  content:"\f219";
+.education-content li::before {
+  content: "\f219";
   font-weight: 700;
   font-family: "Font Awesome 5 Free";
   position: absolute;
-  left:-30px;
-  top:0;
+  left: -30px;
+  top: 0;
   font-size: 0.5rem;
-  
 }
-
-

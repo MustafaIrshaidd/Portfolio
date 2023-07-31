@@ -1,5 +1,4 @@
 .about-me {
-  background-image: var(--linear-gradient--seaBlue);
   scroll-snap-align: start;
 }
 
@@ -52,7 +51,7 @@
 @media only screen and (min-width: 768px) {
   .about-me .centralized-container {
     flex-direction: row-reverse;
-    gap:7%;
+    gap: 7%;
   }
 
   .about-me-img img {

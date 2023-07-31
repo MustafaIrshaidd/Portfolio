@@ -1,204 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
     <!-- Font Awesome CDN 6.4.0 -->
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-    
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
     <!-- Custom CSS -->
 
-    <link rel="stylesheet" href="/assets/css/public.css">
-    <link rel="stylesheet" href="/assets/css/navigation.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="/assets/css/education.css">
-    <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/public.css" />
+    <link rel="stylesheet" href="/assets/css/navigation.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/education.css" />
+    <link rel="stylesheet" href="/assets/css/projects.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- HTML Content -->
-
-    
 
     <!-- Navigation -->
 
     <nav>
-        <!-- Logo -->
-        <a href="#"><img class="logo" src="/assets/images/logo.png" alt="logo not found"></a>
+      <!-- Logo -->
+      <a href="#"
+        ><img class="logo" src="/assets/images/logo.png" alt="logo not found"
+      /></a>
 
-        <!-- Links -->
-        <input type="checkbox" id="menuBtn">
-        <ul>
-            <label class="nav-icon" for="menuBtn"></label>
-            <li><a href="#"><img src="/assets/icons/homeIcon.png" alt="icon not found"></a></li>
-            <li><a href="#"><img src="/assets/icons/aboutIcon.png" alt="icon not found"></a></li>
-            <li><a href="#"><img src="/assets/icons/gradHatIcon.png" alt="icon not found"></a></li>
-            <li><a href="#"><img src="/assets/icons/eyeIcon.png" alt="icon not found"></a></li>
-            <li><a href="#"><img src="/assets/icons/msgIcon.png" alt="icon not found"></a></li>
-        </ul>
+      <!-- Links -->
+      <input type="checkbox" id="menuBtn" />
+      <ul>
+        <label class="nav-icon" for="menuBtn"></label>
+        <li>
+          <a href="#header"
+            ><img src="/assets/icons/homeIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#aboutMe"
+            ><img src="/assets/icons/aboutIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#education"
+            ><img src="/assets/icons/gradHatIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#projects"
+            ><img src="/assets/icons/eyeIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#contact"
+            ><img src="/assets/icons/msgIcon.png" alt="icon not found"
+          /></a>
+        </li>
+      </ul>
     </nav>
 
     <!-- End Of Navigation -->
 
     <main class="main">
+      <!-- Header -->
 
-        <!-- Header -->
+      <header id="header" class="header">
+        <div class="centralized-container">
+          <div class="header-img">
+            <img
+              class="header-img--sizing"
+              src="/assets/images/headerImg.jpeg"
+              height="264px"
+              width="264px"
+              alt="" />
+          </div>
+          <div class="header-content">
+            <p class="header-content--hello">Hello <span>!</span></p>
 
-        <header id="header">
-            <div class="centralized-container">
-                <div class="header-img">
-                    <img class="header-img--sizing" src="/assets/images/headerImg.jpeg" height="264px" width="264px" alt="">
-                </div>
-                <div class="header-content">
-                    <p class="header-content--hello">Hello <span>!</span></p>
-        
-                    <h1>Mustafa Irshaid</h1>
+            <h1>Mustafa Irshaid</h1>
 
-                    <p>A Proffesional Front-End Developer</p>
-                </div>
-            </div>
-        </header>
+            <p>A Proffesional Front-End Developer</p>
+          </div>
+        </div>
+      </header>
 
-        <!-- End Of Header -->
+      <!-- End Of Header -->
 
-        <!-- About Me -->
+      <!-- About Me -->
 
-        <section class="about-me" id="aboutMe">
-            <div class="centralized-container">
-                <div class="about-me-img">
-                    <img src="/assets/images/aboutme.png" alt="about me image not found">
-                </div>
-                <div class="about-me-body">
-                    <h2>Who I'am <span>?!</span></h2>
+      <section class="about-me" id="aboutMe">
+        <div class="centralized-container">
+          <div class="about-me-img">
+            <img
+              src="/assets/images/aboutme.png"
+              alt="about me image not found" />
+          </div>
+          <div class="about-me-body">
+            <h2>Who I'am <span>?!</span></h2>
 
-                    <p>I’am a computer engineering student in my 4th year. I love learning new things and enjoy gaming, reading books, and exploring business ideas.</p>
-                </div>
-            </div>
-        </section>
+            <p>
+              I’am a computer engineering student in my 4th year. I love
+              learning new things and enjoy gaming, reading books, and exploring
+              business ideas.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- End Of About Me -->
+      <!-- End Of About Me -->
 
-        <!-- Education -->
+      <!-- Education -->
 
-        <section class="education" id="education">
-            <div class="centralized-container">
-                <ul class="education-intervals">
-                   <li>
-                    <a class="education-intervals-links" href="#">2023</a>
-                    <div class="education-content">
-                        <ul>
-                            <li>Secured an internship at Foothill</li>
-                            <li>gaining real-world experience and collaborating with professionals.</li>
-                            <li>Completed a comprehensive Node.js bootcamp, mastering server-side JavaScript and building RESTful APIs.</li>
-                            <li>Mastered React through the Knowledge Academy's front-end development course.</li>
-                            <li>Embraced challenges and contributed to open-source projects, enhancing programming skills.</li>
-                            <li>Fueled passion for technology, setting the stage for a promising future in web development.</li>
-                        </ul>
-                    </div>
-                    </li>
-                   <li>
-                    <a class="education-intervals-links" href="#">2022</a>
-                    <div class="education-content">
-                        <ul>
-                            <li>Secured an internship at Foothill</li>
-                            <li>gaining real-world experience and collaborating with professionals.</li>
-                            <li>Completed a comprehensive Node.js bootcamp, mastering server-side JavaScript and building RESTful APIs.</li>
-                            <li>Mastered React through the Knowledge Academy's front-end development course.</li>
-                            <li>Embraced challenges and contributed to open-source projects, enhancing programming skills.</li>
-                            <li>Fueled passion for technology, setting the stage for a promising future in web development.</li>
-                        </ul>
-                    </div>
-                   </li>
-                   <li>
-                    <a class="education-intervals-links" href="#">2021</a>
-                    <div class="education-content">
-
-                        <ul>
-                            <li>Secured an internship at Foothill</li>
-                            <li>gaining real-world experience and collaborating with professionals.</li>
-                            <li>Completed a comprehensive Node.js bootcamp, mastering server-side JavaScript and building RESTful APIs.</li>
-                            <li>Mastered React through the Knowledge Academy's front-end development course.</li>
-                            <li>Embraced challenges and contributed to open-source projects, enhancing programming skills.</li>
-                            <li>Fueled passion for technology, setting the stage for a promising future in web development.</li>
-                        </ul>
-                    </div>
-                   </li>
-                   <li>
-                    <a class="education-intervals-links" href="#">2019</a>
-                    <div class="education-content">
-                        <ul>
-                            <li>Secured an internship at Foothill</li>
-                            <li>gaining real-world experience and collaborating with professionals.</li>
-                            <li>Completed a comprehensive Node.js bootcamp, mastering server-side JavaScript and building RESTful APIs.</li>
-                            <li>Mastered React through the Knowledge Academy's front-end development course.</li>
-                            <li>Embraced challenges and contributed to open-source projects, enhancing programming skills.</li>
-                            <li>Fueled passion for technology, setting the stage for a promising future in web development.</li>
-                        </ul>
-                    </div>
-                   </li>
+      <section class="education" id="education">
+        <div class="centralized-container">
+          <ul class="education-intervals">
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2023</a>
+              </div>
+              <div class="education-content">
+                <ul>
+                  <li>Secured an internship at Foothill</li>
+                  <li>
+                    gaining real-world experience and collaborating with
+                    professionals.
+                  </li>
+                  <li>
+                    Completed a comprehensive Node.js bootcamp, mastering
+                    server-side JavaScript and building RESTful APIs.
+                  </li>
+                  <li>
+                    Mastered React through the Knowledge Academy's front-end
+                    development course.
+                  </li>
+                  <li>
+                    Embraced challenges and contributed to open-source projects,
+                    enhancing programming skills.
+                  </li>
+                  <li>
+                    Fueled passion for technology, setting the stage for a
+                    promising future in web development.
+                  </li>
                 </ul>
-            </div>
-        </section>
-
-        <!-- End Of Education -->
-
-        <!-- Projects -->
-
-        <section class="projects" id="projects">
-            <div class="centralized-container">
-                <ul class="projects-cards--container">
-                    <li class="project-card">
-                        <a href="#">
-                            <img class="project-card--img" src="/assets/images/projects/landing-pages.png" alt="project image not found">
-                        </a>
-                    </li>
-                    <li class="project-card">
-                        <a href="#">
-                            <img class="project-card--img" src="/assets/images/projects/hospital.png" alt="project image not found">
-                        </a>
-                    </li>
-                    <li class="project-card">
-                        <a href="#">
-                            <img class="project-card--img" src="/assets/images/projects/grey-scale.png" alt="project image not found">
-                        </a>
-                    </li>
-                    <li class="project-card">
-                        <a href="#">
-                            <img class="project-card--img" src="/assets/images/projects/stage.png" alt="project image not found">
-                        </a>
-                    </li>
-                    <li class="project-card">
-                        <a href="#">
-                            <img class="project-card--img" src="/assets/images/projects/sarahah.png" alt="project image not found">
-                        </a>
-                    </li>
+              </div>
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2022</a>
+              </div>
+              <div class="education-content">
+                <ul>
+                  <li>Secured an internship at Foothill</li>
+                  <li>
+                    gaining real-world experience and collaborating with
+                    professionals.
+                  </li>
+                  <li>
+                    Completed a comprehensive Node.js bootcamp, mastering
+                    server-side JavaScript and building RESTful APIs.
+                  </li>
+                  <li>
+                    Mastered React through the Knowledge Academy's front-end
+                    development course.
+                  </li>
+                  <li>
+                    Embraced challenges and contributed to open-source projects,
+                    enhancing programming skills.
+                  </li>
+                  <li>
+                    Fueled passion for technology, setting the stage for a
+                    promising future in web development.
+                  </li>
                 </ul>
+              </div>
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2021</a>
+              </div>
+              <div class="education-content">
+                <ul>
+                  <li>Secured an internship at Foothill</li>
+                  <li>
+                    gaining real-world experience and collaborating with
+                    professionals.
+                  </li>
+                  <li>
+                    Completed a comprehensive Node.js bootcamp, mastering
+                    server-side JavaScript and building RESTful APIs.
+                  </li>
+                  <li>
+                    Mastered React through the Knowledge Academy's front-end
+                    development course.
+                  </li>
+                  <li>
+                    Embraced challenges and contributed to open-source projects,
+                    enhancing programming skills.
+                  </li>
+                  <li>
+                    Fueled passion for technology, setting the stage for a
+                    promising future in web development.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2019</a>
+              </div>
+              <div class="education-content">
+                <ul>
+                  <li>Secured an internship at Foothill</li>
+                  <li>
+                    gaining real-world experience and collaborating with
+                    professionals.
+                  </li>
+                  <li>
+                    Completed a comprehensive Node.js bootcamp, mastering
+                    server-side JavaScript and building RESTful APIs.
+                  </li>
+                  <li>
+                    Mastered React through the Knowledge Academy's front-end
+                    development course.
+                  </li>
+                  <li>
+                    Embraced challenges and contributed to open-source projects,
+                    enhancing programming skills.
+                  </li>
+                  <li>
+                    Fueled passion for technology, setting the stage for a
+                    promising future in web development.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <!-- End Of Education -->
+
+      <!-- Projects -->
+
+      <section class="projects" id="projects">
+        <div class="centralized-container">
+          <ul class="projects-cards--container">
+            <li class="project-card">
+              <a href="#">
+                <img
+                  class="project-card--img"
+                  src="/assets/images/projects/landing-pages.png"
+                  alt="project image not found" />
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="#">
+                <img
+                  class="project-card--img"
+                  src="/assets/images/projects/hospital.png"
+                  alt="project image not found" />
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="#">
+                <img
+                  class="project-card--img"
+                  src="/assets/images/projects/grey-scale.png"
+                  alt="project image not found" />
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="#">
+                <img
+                  class="project-card--img"
+                  src="/assets/images/projects/stage.png"
+                  alt="project image not found" />
+              </a>
+            </li>
+            <li class="project-card">
+              <a href="#">
+                <img
+                  class="project-card--img"
+                  src="/assets/images/projects/sarahah.png"
+                  alt="project image not found" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- End Of Projects -->
+
+      <!-- Contact Me -->
+
+      <section class="contact" id="contact">
+        <div class="centralized-container">
+          <form class="contact-form" method="post">
+            <div class="name">
+              <div class="first-name">
+                <input type="text" id="firstName" />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="last-name">
+                <input type="text" id="lastName" />
+                <label for="lastName">Last Name</label>
+              </div>
             </div>
-        </section>
+            <div class="email">
+              <input type="email" id="email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="message">
+              <textarea type="textarea" rows="3" id="message"></textarea>
+              <label for="message">Send Message</label>
+            </div>
+          </form>
+        </div>
+      </section>
 
-        <!-- End Of Projects -->
-
+      <!-- End Of Contact Me -->
     </main>
-    
 
-        
+    <div class="bg-overlay bg-overlay-1"></div>
+    <div class="bg-overlay bg-overlay-2"></div>
+    <div class="bg-overlay bg-overlay-3"></div>
+    <div class="bg-overlay bg-overlay-4"></div>
+    <div class="bg-overlay bg-overlay-5"></div>
 
-
-    
-        
-
-</body>
-
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>

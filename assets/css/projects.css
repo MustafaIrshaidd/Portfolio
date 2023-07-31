@@ -1,6 +1,6 @@
 .projects {
   scroll-snap-align: start;
-  background-image: var(--linear-gradient--skyBlue);
+  box-sizing: content-box;
 }
 
 .projects .centralized-container {

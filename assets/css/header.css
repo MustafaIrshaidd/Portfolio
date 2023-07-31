@@ -1,5 +1,4 @@
 header {
-  background-image: var(--linear-gradient--darkGrey);
   scroll-snap-align: start;
 }
 
@@ -27,7 +26,7 @@ header .centralized-container {
 
 .header-content {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .header-content--hello {
