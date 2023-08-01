@@ -97,26 +97,30 @@ mainContainer.addEventListener("scroll", reveal);
 // Handling contact form content 
 
 // Get the input and textarea elements
-// const inputElements = document.querySelectorAll("input, textarea");
-// const inputLabels = document.querySelectorAll(".content label");
+const inputElements = document.querySelectorAll(".contact input, .contact textarea");
+const inputLabels = document.querySelectorAll(".content label");
 
-// // Add event listeners for input changes and initial check
-// inputElements.forEach((element) => {
-//   element.addEventListener("input", handleInputFocus);
-//   handleInputFocus(element);
-// });
+// Add event listeners for input changes and initial check
+inputElements.forEach((element) => {
+  element.addEventListener("input", () => handleInputFocus(element));
+  handleInputFocus(element);
+});
 
-// // Function to check input and textarea values and apply focus styles
-// function handleInputFocus(element) {
-//   if (!element) return;
+// Function to check input and textarea values and apply focus styles
+function handleInputFocus(element) {
+  if (!element) return;
 
-//   if (element.value !== '') {
-//     if(typeof element.target == 'undefined'){
-//       return;
-//     }
-//     console.log(element.nextElementSibling)
-    
-//   } else {
-//     element.classList.add("has-content");
-//   }
-// }
+  const nextSibling = element.nextElementSibling;
+
+  let className = "input-has-content";
+
+  if (element.tagName == "TEXTAREA") {
+    className = "textarea-has-content";
+  }
+
+  if (element.value.trim() !== '') {
+    nextSibling.classList.add(className)
+  } else {
+    nextSibling.classList.remove(className)
+  }
+}
