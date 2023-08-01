@@ -26,6 +26,7 @@
 /* Body */
 
 .about-me-body {
+  transition-delay:0.3s;
   text-transform: capitalize;
   text-align: center;
   max-width: 480px;
