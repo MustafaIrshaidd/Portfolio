@@ -89,3 +89,34 @@ function reveal(event) {
 }
 
 mainContainer.addEventListener("scroll", reveal);
+
+
+
+
+
+// Handling contact form content 
+
+// Get the input and textarea elements
+// const inputElements = document.querySelectorAll("input, textarea");
+// const inputLabels = document.querySelectorAll(".content label");
+
+// // Add event listeners for input changes and initial check
+// inputElements.forEach((element) => {
+//   element.addEventListener("input", handleInputFocus);
+//   handleInputFocus(element);
+// });
+
+// // Function to check input and textarea values and apply focus styles
+// function handleInputFocus(element) {
+//   if (!element) return;
+
+//   if (element.value !== '') {
+//     if(typeof element.target == 'undefined'){
+//       return;
+//     }
+//     console.log(element.nextElementSibling)
+    
+//   } else {
+//     element.classList.add("has-content");
+//   }
+// }

@@ -17,7 +17,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 4vh;
 }
 
 .contact .name {
@@ -48,7 +48,7 @@
 .contact .email label {
   top: 50%;
   left: 30px;
-  transform: translateY(-50%);
+  transform: translateY(-54%);
 }
 
 .contact .message label {
@@ -85,13 +85,36 @@
   transition: all 0.3s;
 }
 
-.contact-form .name input:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   background-color: transparent;
+  color:white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.contact-form input:focus ~ input::after {
+  width: 100%;
 }
 
 .contact label {
   transition: all 0.3s;
 }
 
+.contact .email input:focus ~ label {
+  top: -15px;
+  left: 12px;
+  color: var(--light);
+}
+
 .contact textarea:focus ~ label {
+  top: -25px;
+  left: 12px;
+  color: var(--light);
+}
+
+
+.has-content{
+  top: -25px;
+  left: 12px;
+  color: var(--light);
 }
