@@ -1,6 +1,10 @@
 const mainContainer = document.querySelector("main");
 
+let categoryContentIDForOffsetMap = new Map();
 let lastScrollY = mainContainer.scrollTop;
+
+
+
 
 const detectScrollUp = () => {
   const currentScrollY = mainContainer.scrollTop;
@@ -14,7 +18,7 @@ const detectScrollUp = () => {
   return true;
 };
 
-let categoryContentIDForOffsetMap = new Map();
+
 
 const getElementPositions = () => {
   document.querySelectorAll("header, section").forEach((element, index) => {
@@ -25,9 +29,7 @@ const getElementPositions = () => {
   });
 };
 
-window.onload = () => {
-  getElementPositions();
-
+const calculateEducationLinesHeights = () => {
   const education = document.querySelector(".education-intervals");
 
   const educationFirstElement = document.querySelector(
@@ -66,7 +68,10 @@ window.onload = () => {
   document.head.appendChild(styleElement);
 };
 
-
+window.onload = () => {
+  getElementPositions();
+  calculateEducationLinesHeights();
+};
 
 function reveal(event) {
   if (
@@ -75,6 +80,8 @@ function reveal(event) {
     const value = categoryContentIDForOffsetMap.get(
       Math.floor(mainContainer.scrollTop / 10)
     );
+
+    
 
     if (!detectScrollUp()) {
       for (let i = 1; i < value; i++) {
@@ -88,14 +95,12 @@ function reveal(event) {
 
 mainContainer.addEventListener("scroll", reveal);
 
-
-
-
-
-// Handling contact form content 
+// Handling contact form content
 
 // Get the input and textarea elements
-const inputElements = document.querySelectorAll(".contact input, .contact textarea");
+const inputElements = document.querySelectorAll(
+  ".contact input, .contact textarea"
+);
 const inputLabels = document.querySelectorAll(".content label");
 
 // Add event listeners for input changes and initial check
@@ -116,31 +121,38 @@ function handleInputFocus(element) {
     className = "textarea-has-content";
   }
 
-  if (element.value.trim() !== '') {
-    nextSibling.classList.add(className)
+  if (element.value.trim() !== "") {
+    nextSibling.classList.add(className);
   } else {
-    nextSibling.classList.remove(className)
+    nextSibling.classList.remove(className);
   }
 }
 
-
 // Animation Handler
 
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach((entry)=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show")
-    } else{
-      entry.target.classList.remove("show")
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
-  })
-})
+  });
+});
 
-const hiddenElements = document.querySelectorAll(".hidden")
-hiddenElements.forEach((el)=> observer.observe(el))
-
-
-// Navigation handler
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
 
 
+const navBtns = document.getElementById("navBtns");
+const navImgs = document.querySelectorAll("#navBtns img")
 
+navBtns.onclick = (ev)=>{
+  
+  if(ev.target.tagName=="IMG"){
+    navImgs.forEach((img)=>{
+      img.classList.remove("active")
+    })
+    ev.target.classList.add("active")
+  }
+}

@@ -72,8 +72,8 @@
   }
 
   .about-me-img img {
-    height: 530px;
-    width: 300px;
+    height: 400px;
+    width: 250px;
   }
 
   .about-me-img::after {
@@ -109,6 +109,16 @@
     line-height: 30px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+
+
+  .about-me-img img{
+    height: 350px;
+    width: 225px;
+  }
+}
+
 
 @media only screen and (min-width: 1400px) {
   .about-me .centralized-container{

@@ -162,6 +162,11 @@ nav ul li:nth-of-type(5) {
   transition: width 0.4s;
 }
 
+.active{
+  background-color: rgba(145, 143, 143, 0.7);
+  border-radius: 50%;
+}
+
 /* media query for resposivisity */
 
 @media only screen and (min-width: 768px) {
@@ -173,6 +178,11 @@ nav ul li:nth-of-type(5) {
 }
 
 @media only screen and (min-width: 1400px) {
+
+  .active{
+    background-color: var(--light);
+    border-radius: 50%;
+  }
 
   .logo-container {
     width: auto;
