@@ -32,9 +32,11 @@
 
     <nav>
       <!-- Logo -->
-      <a href="#"
-        ><img class="logo" src="/assets/images/logo.png" alt="logo not found"
-      /></a>
+      <div class="logo-container">
+        <a href="#"
+          ><img class="logo" src="/assets/images/logo.png" alt="logo not found"
+        /></a>
+      </div>
 
       <!-- Links -->
       <input type="checkbox" id="menuBtn" />
@@ -88,7 +90,10 @@
 
             <h1>Mustafa Irshaid</h1>
 
-            <p class="header-content--p">A Proffesional Front-End Developer</p>
+            <p class="header-content--p">
+              A dedicated, self-taught Computer Engineer in pursuit of success
+              through continuous learning and high motivation.
+            </p>
           </div>
         </div>
       </header>
@@ -122,13 +127,17 @@
 
       <section class="education" id="education">
         <div class="centralized-container">
+          <div class="education-header-container">
+            <h2 class="hidden">Education</h2>
+          </div>
+
           <ul class="education-intervals">
             <li>
               <div class="education-intervals-links-container">
                 <a class="education-intervals-links" href="#">2023</a>
               </div>
-              <div class="education-content hidden">
-                <ul>
+              <div class="education-content">
+                <ul class="hidden">
                   <li>Secured an internship at Foothill</li>
                   <li>
                     gaining real-world experience and collaborating with
@@ -158,7 +167,7 @@
                 <a class="education-intervals-links" href="#">2022</a>
               </div>
               <div class="education-content hidden">
-                <ul>
+                <ul class="hidden">
                   <li>Secured an internship at Foothill</li>
                   <li>
                     gaining real-world experience and collaborating with
@@ -188,7 +197,7 @@
                 <a class="education-intervals-links" href="#">2021</a>
               </div>
               <div class="education-content hidden">
-                <ul>
+                <ul class="hidden">
                   <li>Secured an internship at Foothill</li>
                   <li>
                     gaining real-world experience and collaborating with
@@ -218,7 +227,7 @@
                 <a class="education-intervals-links" href="#">2019</a>
               </div>
               <div class="education-content hidden">
-                <ul>
+                <ul class="hidden">
                   <li>Secured an internship at Foothill</li>
                   <li>
                     gaining real-world experience and collaborating with
@@ -253,46 +262,147 @@
 
       <section class="projects" id="projects">
         <div class="centralized-container">
+          <h2 class="projects--heading">Projects</h2>
           <ul class="projects-cards--container">
             <li class="project-card hidden">
-              <a href="#">
-                <img
-                  class="project-card--img"
-                  src="/assets/images/projects/landing-pages.png"
-                  alt="project image not found" />
-              </a>
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="/assets/images/projects/landing-pages.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Landing Pages</h3>
+                  <p class="project-card--back--paragraph">
+                    Landing pages Convert visitors to customers through targeted
+                    call-to-action.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="project-card hidden">
-              <a href="#">
-                <img
-                  class="project-card--img"
-                  src="/assets/images/projects/hospital.png"
-                  alt="project image not found" />
-              </a>
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="/assets/images/projects/hospital.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Medical Center</h3>
+                  <p class="project-card--back--paragraph">
+                    Providing diverse healthcare services and personalized care
+                    for your well-being.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="project-card hidden">
-              <a href="#">
-                <img
-                  class="project-card--img"
-                  src="/assets/images/projects/grey-scale.png"
-                  alt="project image not found" />
-              </a>
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="/assets/images/projects/grey-scale.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Grey Scale</h3>
+                  <p class="project-card--back--paragraph">
+                    Embracing elegance and simplicity with a monochromatic color
+                    palette for a sophisticated user experience.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="project-card hidden">
-              <a href="#">
-                <img
-                  class="project-card--img"
-                  src="/assets/images/projects/stage.png"
-                  alt="project image not found" />
-              </a>
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="/assets/images/projects/stage.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Stage</h3>
+                  <p class="project-card--back--paragraph">
+                    Collaborative, flexible, and productive workspaces for
+                    diverse professionals.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="project-card hidden">
-              <a href="#">
-                <img
-                  class="project-card--img"
-                  src="/assets/images/projects/sarahah.png"
-                  alt="project image not found" />
-              </a>
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="/assets/images/projects/sarahah.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Sarahah</h3>
+                  <p class="project-card--back--paragraph">
+                    Embrace candid, anonymous messaging for meaningful and
+                    constructive interactions.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -304,7 +414,9 @@
 
       <section class="contact" id="contact">
         <div class="centralized-container">
+          <h2 class="contact--heading">Let's Collab !</h2>
           <form class="contact-form" method="post">
+            
             <div class="name">
               <div class="first-name hidden">
                 <input type="text" id="firstName" />

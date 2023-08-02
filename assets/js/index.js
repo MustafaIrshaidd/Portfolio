@@ -54,7 +54,7 @@ window.onload = () => {
 
   const lineHeight = `
     .education-intervals li:nth-last-of-type(1) .education-intervals-links::after {
-    height:calc(${education.clientHeight}px + 20vh - ${educationLastElement.clientHeight}px + 2.5rem);
+    height:calc(${education.clientHeight}px + 30vh - ${educationLastElement.clientHeight}px + 2.1rem);
   }
 `;
 
@@ -124,7 +124,7 @@ function handleInputFocus(element) {
 }
 
 
-// Handle Animations
+// Animation Handler
 
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
@@ -138,3 +138,9 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hiddenElements = document.querySelectorAll(".hidden")
 hiddenElements.forEach((el)=> observer.observe(el))
+
+
+// Navigation handler
+
+
+

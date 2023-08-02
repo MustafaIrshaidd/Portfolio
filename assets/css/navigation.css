@@ -26,7 +26,6 @@ nav input[type="checkbox"] {
 }
 
 .nav-icon::after {
-  /* content:'\f0c9'; */
   content: "\f077";
   display: block;
   transform: scaleX(3);
@@ -75,7 +74,7 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 4vh;
+  gap: 2vh;
 
   padding: 0px 20px;
 
@@ -119,9 +118,26 @@ nav ul li:nth-of-type(5) {
 
 /* Nav Logo */
 
+.logo-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
-  top: 70px;
-  left: 50%;
+  position: relative;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Active Section label */
@@ -149,16 +165,27 @@ nav ul li:nth-of-type(5) {
 /* media query for resposivisity */
 
 @media only screen and (min-width: 768px) {
-  .logo {
-    top: 70px;
-    left: 70px;
+
+
+  nav ul {
+    gap: 4vh;
   }
 }
 
 @media only screen and (min-width: 1400px) {
+
+  .logo-container {
+    width: auto;
+    height: auto;
+    display: auto;
+  }
+
   .logo {
+    position: fixed;
     top: 70px;
     left: 70px;
+    width:100px;
+    height: 100px;
   }
 
   nav ul {
@@ -166,15 +193,11 @@ nav ul li:nth-of-type(5) {
     top: 10%;
     transform: translate(-50%, 0%);
     /* position */
-
     bottom: 0;
-
     padding: 0;
-
     /* flex direction of nav */
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
     background-color: transparent;
     transition: none;
@@ -188,6 +211,7 @@ nav ul li:nth-of-type(5) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 33%;
   }
 
   .nav-icon::after {

@@ -10,66 +10,74 @@
 
   /* BackGround Gradient Colors */
 
-  --linear-gradient--darkGrey: linear-gradient(90deg,
-      hsl(0deg 0% 51%) 0%,
-      hsl(344deg 0% 50%) 12%,
-      hsl(344deg 0% 48%) 22%,
-      hsl(344deg 0% 47%) 30%,
-      hsl(344deg 0% 50%) 38%,
-      hsl(344deg 0% 53%) 44%,
-      hsl(344deg 0% 57%) 50%,
-      hsl(344deg 0% 61%) 55%,
-      hsl(344deg 0% 65%) 61%,
-      hsl(344deg 0% 70%) 66%,
-      hsl(344deg 0% 75%) 72%,
-      hsl(344deg 0% 83%) 78%,
-      hsl(344deg 0% 92%) 87%,
-      hsl(0deg 0% 100%) 100%);
+  --linear-gradient--darkGrey: linear-gradient(
+    90deg,
+    hsl(0deg 0% 51%) 0%,
+    hsl(344deg 0% 50%) 12%,
+    hsl(344deg 0% 48%) 22%,
+    hsl(344deg 0% 47%) 30%,
+    hsl(344deg 0% 50%) 38%,
+    hsl(344deg 0% 53%) 44%,
+    hsl(344deg 0% 57%) 50%,
+    hsl(344deg 0% 61%) 55%,
+    hsl(344deg 0% 65%) 61%,
+    hsl(344deg 0% 70%) 66%,
+    hsl(344deg 0% 75%) 72%,
+    hsl(344deg 0% 83%) 78%,
+    hsl(344deg 0% 92%) 87%,
+    hsl(0deg 0% 100%) 100%
+  );
 
-  --linear-gradient--seaBlue: linear-gradient(90deg,
-      hsl(227deg 33% 43%) 0%,
-      hsl(223deg 42% 45%) 8%,
-      hsl(218deg 53% 46%) 17%,
-      hsl(213deg 73% 45%) 25%,
-      hsl(212deg 71% 49%) 33%,
-      hsl(211deg 75% 52%) 42%,
-      hsl(210deg 85% 55%) 50%,
-      hsl(207deg 90% 62%) 58%,
-      hsl(205deg 94% 70%) 67%,
-      hsl(202deg 98% 78%) 75%,
-      hsl(204deg 99% 86%) 83%,
-      hsl(205deg 99% 93%) 92%,
-      hsl(0deg 0% 100%) 100%);
+  --linear-gradient--seaBlue: linear-gradient(
+    90deg,
+    hsl(227deg 33% 43%) 0%,
+    hsl(223deg 42% 45%) 8%,
+    hsl(218deg 53% 46%) 17%,
+    hsl(213deg 73% 45%) 25%,
+    hsl(212deg 71% 49%) 33%,
+    hsl(211deg 75% 52%) 42%,
+    hsl(210deg 85% 55%) 50%,
+    hsl(207deg 90% 62%) 58%,
+    hsl(205deg 94% 70%) 67%,
+    hsl(202deg 98% 78%) 75%,
+    hsl(204deg 99% 86%) 83%,
+    hsl(205deg 99% 93%) 92%,
+    hsl(0deg 0% 100%) 100%
+  );
 
-  --linear-gradient--pinky: linear-gradient(90deg,
-      hsl(296deg 41% 45%) 0%,
-      hsl(297deg 38% 50%) 8%,
-      hsl(298deg 45% 55%) 17%,
-      hsl(299deg 53% 61%) 25%,
-      hsl(296deg 61% 64%) 33%,
-      hsl(294deg 70% 66%) 42%,
-      hsl(292deg 81% 69%) 50%,
-      hsl(291deg 84% 72%) 58%,
-      hsl(291deg 88% 75%) 67%,
-      hsl(291deg 93% 78%) 75%,
-      hsl(292deg 94% 85%) 83%,
-      hsl(294deg 96% 93%) 92%,
-      hsl(0deg 0% 100%) 100%);
+  --linear-gradient--pinky: linear-gradient(
+    90deg,
+    hsl(296deg 41% 45%) 0%,
+    hsl(297deg 38% 50%) 8%,
+    hsl(298deg 45% 55%) 17%,
+    hsl(299deg 53% 61%) 25%,
+    hsl(296deg 61% 64%) 33%,
+    hsl(294deg 70% 66%) 42%,
+    hsl(292deg 81% 69%) 50%,
+    hsl(291deg 84% 72%) 58%,
+    hsl(291deg 88% 75%) 67%,
+    hsl(291deg 93% 78%) 75%,
+    hsl(292deg 94% 85%) 83%,
+    hsl(294deg 96% 93%) 92%,
+    hsl(0deg 0% 100%) 100%
+  );
 
-  --linear-gradient--skyBlue: linear-gradient(90deg,
-      hsl(202deg 68% 45%) 0%,
-      hsl(202deg 54% 52%) 8%,
-      hsl(202deg 54% 59%) 17%,
-      hsl(202deg 55% 65%) 25%,
-      hsl(204deg 62% 71%) 33%,
-      hsl(206deg 72% 77%) 42%,
-      hsl(209deg 89% 82%) 50%,
-      hsl(211deg 91% 85%) 58%,
-      hsl(213deg 93% 88%) 67%,
-      hsl(215deg 96% 91%) 75%,
-      hsl(216deg 96% 94%) 83%,
-      hsl(216deg 97% 97%) 92%,
-      hsl(0deg 0% 100%) 100%);
+  --linear-gradient--skyBlue: linear-gradient(
+    90deg,
+    hsl(202deg 68% 45%) 0%,
+    hsl(202deg 54% 52%) 8%,
+    hsl(202deg 54% 59%) 17%,
+    hsl(202deg 55% 65%) 25%,
+    hsl(204deg 62% 71%) 33%,
+    hsl(206deg 72% 77%) 42%,
+    hsl(209deg 89% 82%) 50%,
+    hsl(211deg 91% 85%) 58%,
+    hsl(213deg 93% 88%) 67%,
+    hsl(215deg 96% 91%) 75%,
+    hsl(216deg 96% 94%) 83%,
+    hsl(216deg 97% 97%) 92%,
+    hsl(0deg 0% 100%) 100%
+  );
 }
 
 * {
@@ -98,29 +106,43 @@ a {
 
 main {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100vh;
+  overflow-y: scroll;
   background: transparent;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
   background: transparent;
 }
 
-/* section {
-  opacity: 0;
-  transition: 1s all ease-in-out;
-} */
-
-/* section.active {
-  opacity: 1;
-} */
-
-main {
-  position: relative;
+body::-webkit-scrollbar {
+  visibility: hidden;
 }
 
+@media only screen and (min-width: 1400px) {
+  body::-webkit-scrollbar {
+    visibility: visible;
+  }
 
+  /* custom scrollbar */
+
+  main::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  main::-webkit-scrollbar-track {
+    margin-block: 0.1em;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 100vw;
+  }
+
+}
 
 .bg-overlay {
   position: fixed;
@@ -155,17 +177,23 @@ main {
 } */
 
 .bg-overlay-3 {
-  background-image: var(--linear-gradient--pinky);
+  background-image: url(../images/bg-education.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -4;
 }
 
 .bg-overlay-4 {
-  background-image: var(--linear-gradient--skyBlue);
+  background-image: url(../images/bg-projects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -5;
 }
 
 .bg-overlay-5 {
-  background-image: var(--linear-gradient--darkGrey);
+  background-image: url(../images/bg-contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -6;
 }
 
@@ -229,16 +257,16 @@ main {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 
-  /* 25%{
+  25% {
     border-radius: 25% 75% 29% 45% / 58% 49% 51% 42%;
-  } */
+  }
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 
-  /* 75%{
+  75% {
     border-radius: 25% 37% 45% 55% / 58% 49% 30% 42%;
-  } */
+  }
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
@@ -247,22 +275,21 @@ main {
 /* The typing effect */
 @keyframes typing {
   0% {
-    width: 0
+    width: 0;
   }
-  50%{
-    width: 100%
+  50% {
+    width: 100%;
   }
   100% {
-    width:100%
+    width: 100%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
-    border-color: transparent
+    border-color: transparent;
   }
 
   50% {
@@ -279,7 +306,7 @@ main {
     transform: scale(1.2) rotate(360deg);
   }
 
-  70%{
+  70% {
     transform: scale(1) rotate(360deg);
   }
 
@@ -287,4 +314,3 @@ main {
     transform: scale(1) rotate(360deg);
   }
 }
-
