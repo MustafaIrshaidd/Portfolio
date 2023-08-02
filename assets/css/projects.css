@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 12vh;
 }
 
 .projects--heading {
@@ -125,6 +126,7 @@
   .project .centralized-container {
     width: 100%;
     min-height: 100vh;
+    
   }
   .projects-cards--container {
     flex-direction: row;
@@ -152,9 +154,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .project .centralized-container {
+  .projects .centralized-container {
     padding-bottom: 0;
-    height: 120vh;
+    height: 100vh;
+    padding-top:20vh;
   }
   .project-card {
     width: 20vw;
