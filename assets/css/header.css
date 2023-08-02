@@ -5,7 +5,7 @@ header {
 /* Header Layout */
 
 header .centralized-container {
-  min-height: calc(100vh - 160px);
+  min-height: 100vh;
   letter-spacing: 1px;
   text-align: center;
   color: var(--light);

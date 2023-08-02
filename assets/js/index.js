@@ -3,9 +3,6 @@ const mainContainer = document.querySelector("main");
 let categoryContentIDForOffsetMap = new Map();
 let lastScrollY = mainContainer.scrollTop;
 
-
-
-
 const detectScrollUp = () => {
   const currentScrollY = mainContainer.scrollTop;
 
@@ -17,8 +14,6 @@ const detectScrollUp = () => {
   lastScrollY = currentScrollY;
   return true;
 };
-
-
 
 const getElementPositions = () => {
   document.querySelectorAll("header, section").forEach((element, index) => {
