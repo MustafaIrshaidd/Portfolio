@@ -1,0 +1,215 @@
+.education {
+  scroll-snap-align: start;
+}
+
+.education .centralized-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 30vh 0 80vh 0;
+}
+
+.education-intervals {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-intervals > li {
+  position: relative;
+}
+
+.education-intervals-links-container {
+  position: absolute;
+  width: fit-content;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2.5rem;
+  overflow: visible;
+}
+
+.education-intervals-links-container .education-intervals-links {
+  background-color: var(--light);
+  border-radius: 10px;
+  position: sticky;
+  top: 200px;
+  bottom: 0.25rem;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+}
+
+.education-intervals li:nth-of-type(1) .education-intervals-links::after {
+  content: "";
+  position: absolute;
+  z-index: -3;
+  left: 0;
+  top: 0;
+  width: 77px;
+  background-color: rgba(255, 255, 255, 0.225);
+}
+
+.education-intervals li:nth-last-of-type(1) .education-intervals-links::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  height: 175vh;
+  background-color: rgba(255, 255, 255, 0.499);
+}
+
+.education-intervals:not(:last-child) li {
+  content: "";
+  width: 2px;
+  height: 365px;
+  position: absolute;
+  bottom: -548px;
+  left: 50%;
+  transform: translate(0px, -50%);
+  background-color: rgba(255, 255, 255, 0.499);
+}
+
+.education-intervals-links {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* Content */
+
+.education-content {
+  position: relative;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  margin-bottom: 4.5rem;
+  margin-top: 1rem;
+}
+
+.education-intervals .education-content li:nth-of-type(1):after {
+  width: 0px;
+}
+
+.education-content::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -2vh;
+  left: -5vw;
+  bottom: -2vh;
+  right: 20vw;
+
+  background: rgba(241, 241, 241, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(241, 241, 241, 0.25);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.education-content:hover::after {
+  box-shadow: none;
+}
+
+.education-content li {
+  position: relative;
+  cursor: pointer;
+  width: 50vw;
+  color: var(--light);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.education-content li::before {
+  content: "\f219";
+  font-weight: 700;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  font-size: 0.5rem;
+}
+
+/* Education header */
+
+.education-header-container{
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.education-header-container h2{
+  font-family: "Inter", sans-serif;
+  font-size: 2rem !important;
+  color: var(--light);
+}
+
+/* media query for resposivisity */
+
+@media only screen and (max-width: 768px) {
+  .education-intervals {
+    padding-top: 30px;
+    gap: 44px;
+  }
+
+  .education-header-container h2{
+    font-size: 3rem;
+  }
+
+  .education-intervals-links-container .education-intervals-links {
+    position: static;
+  }
+  .education .centralized-container {
+    width: 90%;
+  }
+  .education-intervals-links-container {
+    left: 0;
+  }
+
+  .education-content {
+    top: auto;
+    bottom: -50px;
+    left: 46%;
+  }
+
+  .education-content li {
+    margin: auto;
+    width: 85%;
+    margin-left: 14%;
+    font-size: 1rem;
+  }
+
+  .education h2 {
+    top: 160px;
+  }
+
+  .education-content::after {
+    top: -2vh;
+    left: 3vw;
+    bottom: -2vh;
+    right: -3vw;
+  }
+
+  .education-intervals li:nth-of-type(1) .education-intervals-links::after {
+    visibility: hidden;
+  }
+
+  .education-intervals
+    li:nth-last-of-type(1)
+    .education-intervals-links::after {
+    visibility: hidden;
+  }
+}

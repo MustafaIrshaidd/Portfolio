@@ -1,0 +1,155 @@
+header {
+  scroll-snap-align: start;
+}
+
+/* Header Layout */
+
+header .centralized-container {
+  min-height: calc(100vh - 160px);
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header-content & header-img */
+
+.header-img {
+  padding: 20px;
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+/* .header-img::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  height: 30px;
+  animation: rotation 3s linear infinite;
+  background-color: rgb(255, 255, 255);
+} */
+
+
+.header-img--sizing {
+  box-shadow: 0px 5px 20px 1px;
+  width: 100%;
+  height: 175px;
+  animation: morph 8s linear infinite;
+}
+
+.header-content {
+  transition-delay: 0.3s;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color:white;
+}
+
+.header-content--hello {
+  font-size: 3rem;
+  padding-bottom:0.7rem;
+}
+
+.header-content--hello span {
+  font-weight: 800;
+  display: inline-block;
+  animation: scaleAndRotation 1.5s ease-in-out;
+}
+
+.header-content h1 {
+  position: relative;
+  margin-bottom: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  overflow: hidden;
+  border-right: .1em solid white;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: auto;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(10, end), blink-caret 1s alternate infinite;
+  
+}
+
+
+.header-content h1::before {
+  content: "My Name is ";
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.header-content--p {
+  
+  padding-top:1.5rem;
+  font-size: 1.3rem;
+  width:100%;
+  margin: auto;
+}
+
+/* media query for resposivisity */
+
+@media only screen and (min-width: 768px) {
+  header .centralized-container {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap:5%;
+    
+  }
+
+  .header-content {
+    text-align: start;
+    width:min-content;
+  }
+
+  .header-content h1 {
+    margin:0;
+    width:min-content;
+  }
+
+  .header-img{
+    width:fit-content;
+  }
+
+  .header-img--sizing {
+    width: 300px;
+    height: 300px;
+  }
+
+  .header-content--hello {
+    font-size: 4rem;
+    width: fit-content;
+    margin:0 !important;
+    margin-bottom: 1.2rem;
+    padding-bottom:1.5rem;
+    
+  }
+  .header-content--p {
+    margin: 0;
+    min-width: 30vw !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  header .centralized-container {
+    gap: 5%;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .header-content--hello {
+    font-size: 5rem;
+  }
+}

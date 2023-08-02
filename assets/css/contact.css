@@ -1,0 +1,200 @@
+.contact {
+  scroll-snap-align: start;
+  font-family: "Inter", sans-serif;
+}
+
+.contact ::selection {
+  background-color: highlight;
+}
+
+.contact .centralized-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10vh;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.contact--heading {
+  color: var(--light);
+  font-size: 2rem;
+}
+
+.contact .name {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  width: 100%;
+}
+
+.first-name,
+.last-name,
+.name input {
+  width: 100%;
+}
+
+.contact .name .first-name,
+.contact .name .last-name,
+.contact .email,
+.contact .message {
+  position: relative;
+}
+
+.contact .name .first-name label,
+.contact .name .last-name label,
+.contact .email label,
+.contact .message label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact .name .first-name label,
+.contact .name .last-name label,
+.contact .email label {
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -54%);
+}
+
+.contact .message label {
+  left: 30px;
+  top: 5%;
+}
+
+.contact input,
+.contact .message textarea {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.contact .email input,
+.contact .message input {
+  width: 100%;
+}
+
+.contact .message textarea {
+  height: 15vh;
+  resize: none;
+  min-width: 100%;
+}
+
+.contact-form input {
+  transition: all 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.contact-form input:focus ~ input::after {
+  width: 100%;
+}
+
+.contact label {
+  transition: all 0.3s;
+}
+
+.contact .email input:focus ~ label,
+.contact .name input:focus ~ label {
+  transform: translate(-18px, -40px);
+  color: var(--light);
+}
+
+.contact textarea:focus ~ label {
+  transform: translate(-18px, -30px);
+  color: var(--light);
+}
+
+.input-has-content {
+  transform: translate(-18px, -40px) !important;
+  color: var(--light);
+}
+
+.textarea-has-content {
+  transform: translate(-18px, -30px) !important;
+  color: var(--light);
+}
+
+.contact-me {
+  position: relative;
+  width: 30%;
+  margin: auto;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid var(--light);
+  border-radius: 30px;
+  color: var(--light);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.contact-me::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.contact-me:hover::after {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+.contact-me:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact .centralized-container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  
+  .contact-form {
+    width: 80%;
+    gap: 5vh;
+  }
+
+  .contact .name {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .contact .first-name,
+  .contact .last-name {
+    width: 100%;
+  }
+
+  .contact-me {
+    width: fit-content;
+  }
+
+  .contact--heading {
+    font-size: 1.5rem;
+  }
+}
+
