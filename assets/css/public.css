@@ -153,14 +153,14 @@ body::-webkit-scrollbar {
 }
 
 .bg-overlay-1 {
-  background-image: url(../images/bg-home.png);
+  background-image: url(../images/bg-sections/bg-home.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
 }
 
 .bg-overlay-2 {
-  background-image: url(../images/bg-aboutme.png);
+  background-image: url(../images/bg-sections/bg-aboutme.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -3;
@@ -177,21 +177,21 @@ body::-webkit-scrollbar {
 } */
 
 .bg-overlay-3 {
-  background-image: url(../images/bg-education.png);
+  background-image: url(../images/bg-sections/bg-education.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -4;
 }
 
 .bg-overlay-4 {
-  background-image: url(../images/bg-projects.png);
+  background-image: url(../images/bg-sections/bg-projects.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -5;
 }
 
 .bg-overlay-5 {
-  background-image: url(../images/bg-contact.png);
+  background-image: url(../images/bg-sections/bg-contact.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -6;
