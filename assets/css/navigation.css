@@ -89,10 +89,6 @@ nav ul li {
   align-items: center;
 }
 
-nav ul li a{
-  padding-top:3px;
-}
-
 /* nav transition */
 
 nav ul li:nth-of-type(1) {
@@ -119,6 +115,18 @@ nav ul li:nth-of-type(5) {
   position: relative;
   transition: transform 0.9s;
 }
+
+nav ul li a:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+nav ul li a {
+  padding-top: 3px;
+  transition: transform 0.5s;
+  display: block;
+  
+}
+
 
 /* Nav Logo */
 
@@ -155,6 +163,7 @@ nav ul li:nth-of-type(5) {
 }
 
 /* Active Section label */
+
 .active-section--label {
   position: relative;
   color: var(--light);
