@@ -78,7 +78,7 @@ nav ul {
 
   padding: 0px 20px;
 
-  background-color: var(--light);
+  background-color: #696969;
   border-radius: 15px 15px 0 0;
   transition: all 0.2s;
 }
@@ -124,9 +124,7 @@ nav ul li a {
   padding-top: 3px;
   transition: transform 0.5s;
   display: block;
-  
 }
-
 
 /* Nav Logo */
 
@@ -200,7 +198,11 @@ nav ul li a {
 
 @media only screen and (min-width: 1400px) {
   .active {
-    background-color: var(--light);
+    background: rgba(71, 68, 68, 0.51);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
     border-radius: 50%;
   }
 

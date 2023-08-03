@@ -21,32 +21,12 @@ header .centralized-container {
 .header-img {
   padding: 20px;
   position: relative;
-  /* background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3); */
 }
-
-/* .header-img::after {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  left: -30%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 160%;
-  height: 30px;
-  animation: rotation 3s linear infinite;
-  background-color: rgb(255, 255, 255);
-} */
-
 
 .header-img--sizing {
   box-shadow: 0px 5px 20px 1px;
-  width: 100%;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   animation: morph 8s linear infinite;
 }
 
@@ -55,6 +35,7 @@ header .centralized-container {
   text-align: center;
   font-family: "Inter", sans-serif;
   color:white;
+  width:min-content
 }
 
 .header-content--hello {
@@ -69,8 +50,8 @@ header .centralized-container {
 }
 
 .header-content h1 {
-  position: relative;
   margin-bottom: 1.2rem;
+  width: fit-content;
   font-size: 1.7rem;
   font-weight: 600;
   overflow: hidden;
@@ -80,10 +61,8 @@ header .centralized-container {
   /* Keeps the content on a single line */
   margin: auto;
   /* Adjust as needed */
-  animation: typing 3.5s steps(10, end), blink-caret 1s alternate infinite;
-  
+  animation: typing 3.5s steps(10, end),blink-caret 1s alternate infinite;
 }
-
 
 .header-content h1::before {
   content: "My Name is ";
@@ -91,8 +70,26 @@ header .centralized-container {
   font-size: 1.3rem;
 }
 
-.header-content--p {
+
+/* .header-content h1::after {
+  content:'';
+  top:50%;
+  right:0;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  background-color: white;
+  width: 1px;
+  position: absolute;
+  /* Ensures the content is not revealed until the animation */
   
+  
+  /* Adjust as needed */
+  /* animation: typing 3.5s steps(10, end),blink-caret 1s alternate infinite;
+} */ 
+
+
+
+.header-content--p {
   padding-top:1.5rem;
   font-size: 1.3rem;
   width:100%;
@@ -111,17 +108,15 @@ header .centralized-container {
 
   .header-content {
     text-align: start;
-    width:min-content;
+    
   }
 
   .header-content h1 {
     margin:0;
-    width:min-content;
+    
   }
 
-  .header-img{
-    width:fit-content;
-  }
+
 
   .header-img--sizing {
     width: 300px;
