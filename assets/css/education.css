@@ -5,7 +5,7 @@
 .education .centralized-container {
   position: relative;
   min-height: 100vh;
-  padding: 30vh 0 80vh 0;
+  padding: 30vh 0 50vh 0;
 }
 
 .education-intervals {
@@ -36,12 +36,14 @@
   background-color: var(--light);
   border-radius: 10px;
   position: sticky;
-  top: 200px;
+  top: 30vh;
   bottom: 0.25rem;
   z-index: 1;
   width: fit-content;
   height: fit-content;
 }
+
+
 
 .education-intervals li:nth-of-type(1) .education-intervals-links::after {
   content: "";
@@ -164,7 +166,7 @@
   .education .centralized-container {
     position: relative;
     min-height: 100vh;
-    padding-bottom:40vh;
+    padding:30vh 0 40vh 0;
   }
 
   .education-intervals {

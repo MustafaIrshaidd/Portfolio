@@ -45,13 +45,13 @@ const calculateEducationLinesHeights = () => {
   // Create a new style rule for the ::after pseudo-element
   const bgIntervalsHeight = `
   .education-intervals li:nth-of-type(1) .education-intervals-links::after {
-    height:calc(${education.clientHeight}px + 80vh - ${educationFirstElement.clientHeight}px + 5.1rem);
+    height:calc(${education.clientHeight}px + 50vh - ${educationFirstElement.clientHeight}px + 5.1rem);
   }
 `;
 
   const lineHeight = `
     .education-intervals li:nth-last-of-type(1) .education-intervals-links::after {
-    height:calc(${education.clientHeight}px + 30vh - ${educationLastElement.clientHeight}px + 2.1rem);
+    height:calc(${education.clientHeight}px + 30vh - ${educationLastElement.clientHeight}px + 2.8rem);
   }
 `;
 
