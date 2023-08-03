@@ -1,6 +1,10 @@
 const mainContainer = document.querySelector("main");
 
+const navBtns = document.getElementById("navBtns");
+const navImgs = document.querySelectorAll("#navBtns img");
+
 let categoryContentIDForOffsetMap = new Map();
+let categoryContentIDForOffsetArray = [];
 let lastScrollY = mainContainer.scrollTop;
 
 const detectScrollUp = () => {
@@ -19,8 +23,10 @@ const getElementPositions = () => {
   document.querySelectorAll("header, section").forEach((element, index) => {
     const rect = element.getBoundingClientRect();
     const yOffset = rect.top + window.scrollY;
+
     const yOffsetFloored = Math.floor(yOffset / 10);
     categoryContentIDForOffsetMap.set(yOffsetFloored, index + 1);
+    categoryContentIDForOffsetArray.push(yOffsetFloored);
   });
 };
 
@@ -45,7 +51,7 @@ const calculateEducationLinesHeights = () => {
   // Create a new style rule for the ::after pseudo-element
   const bgIntervalsHeight = `
   .education-intervals li:nth-of-type(1) .education-intervals-links::after {
-    height:calc(${education.clientHeight}px + 50vh - ${educationFirstElement.clientHeight}px + 5.1rem);
+    height:calc(${education.clientHeight}px + 60vh - ${educationFirstElement.clientHeight}px + 5.1rem);
   }
 `;
 
@@ -66,6 +72,7 @@ const calculateEducationLinesHeights = () => {
 window.onload = () => {
   getElementPositions();
   calculateEducationLinesHeights();
+  navImgs[0].classList.add("active");
 };
 
 function reveal(event) {
@@ -75,14 +82,16 @@ function reveal(event) {
     const value = categoryContentIDForOffsetMap.get(
       Math.floor(mainContainer.scrollTop / 10)
     );
-
-    
-
     if (!detectScrollUp()) {
       for (let i = 1; i < value; i++) {
         document.querySelector(`.bg-overlay-${i}`).style.opacity = 0;
       }
     }
+
+    navImgs.forEach((img) => {
+      img.classList.remove("active");
+    });
+    navImgs[value - 1].classList.add("active");
 
     document.querySelector(`.bg-overlay-${value}`).style.opacity = 1;
   }
@@ -137,17 +146,3 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
-
-
-const navBtns = document.getElementById("navBtns");
-const navImgs = document.querySelectorAll("#navBtns img")
-
-navBtns.onclick = (ev)=>{
-  
-  if(ev.target.tagName=="IMG"){
-    navImgs.forEach((img)=>{
-      img.classList.remove("active")
-    })
-    ev.target.classList.add("active")
-  }
-}
