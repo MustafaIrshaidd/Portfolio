@@ -160,6 +160,12 @@
 /* media query for resposivisity */
 
 @media only screen and (max-width: 768px) {
+  .education .centralized-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom:40vh;
+  }
+
   .education-intervals {
     padding-top: 30px;
     gap: 44px;
