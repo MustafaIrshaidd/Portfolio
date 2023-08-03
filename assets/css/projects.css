@@ -147,7 +147,7 @@
   }
 
   .project-card {
-    width: 70%;
+    width: 45%;
     height: 30vh;
     transition: all 0.3s;
   }
@@ -160,16 +160,15 @@
     padding-top:20vh;
   }
   .project-card {
-    width: 20vw;
-    height: 25vh;
+    width: 30%;
+    height: 30vh;
   }
-
-  
 }
 
-@media only screen and (min-width: 1600px) {
+
+@media only screen and (min-width: 1400px) {
   .project-card {
-    width: 20vw;
-    height: 30vh;
+    width: 30%;
+    height: 35vh;
   }
 }

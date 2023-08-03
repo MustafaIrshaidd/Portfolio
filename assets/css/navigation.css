@@ -67,7 +67,7 @@ nav
 nav ul {
   /* position of nav in page */
 
-  bottom: -30px;
+  bottom: -33px;
 
   /* centering the content inside nav */
   display: flex;
