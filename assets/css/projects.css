@@ -21,7 +21,7 @@
 
 .projects-cards--container {
   min-height: calc(100vh - 160px);
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -126,20 +126,18 @@
   .project .centralized-container {
     width: 100%;
     min-height: 100vh;
-    
   }
   .projects-cards--container {
     flex-direction: row;
     gap: 5vh;
-    width:100%;
+    width: 100%;
   }
-  .projects--heading{
+  .projects--heading {
     font-size: 2rem;
   }
 
   .project-card--back--heading {
     font-size: 1.5rem;
-    
   }
 
   .project-card--back--paragraph {
@@ -157,14 +155,13 @@
   .projects .centralized-container {
     padding-bottom: 0;
     height: 100vh;
-    padding-top:20vh;
+    padding-top: 20vh;
   }
   .project-card {
     width: 30%;
     height: 30vh;
   }
 }
-
 
 @media only screen and (min-width: 1400px) {
   .project-card {

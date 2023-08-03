@@ -3,7 +3,7 @@
   font-family: "Inter", sans-serif;
 }
 
-.contact ::selection {
+.contact .contact-form ::selection {
   background-color: highlight;
 }
 
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:10vh;
+  gap: 10vh;
 }
 
 .contact-form {
@@ -21,6 +21,53 @@
   display: flex;
   flex-direction: column;
   gap: 4vh;
+}
+
+.contact--heading {
+  color: var(--light);
+  font-size: 2rem;
+  animation: floating 3s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.contact-heading-container {
+  position: relative;
+}
+
+.contact-heading-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -82px;
+  left: 50%;
+  transform: translateX(-50%) rotate3d(1, 0, 0, 85deg);
+  border-radius: 50%;
+  height: 113px;
+  width: 94%;
+  background-color: white;
+
+  animation: fadingInOut 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadingInOut {
+  0% {
+    transform: translateX(-50%) rotate3d(1, 0, 0, 85deg) scaleY(2);
+    width: 94%;
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(-50%) rotate3d(1, 0, 0, 85deg) scaleY(0);
+    width: 0%;
+    opacity: 0.9;
+  }
 }
 
 .contact--heading {
@@ -167,11 +214,23 @@
 
 @media only screen and (max-width: 1200px) {
   .contact .centralized-container {
+    gap: 7vh;
+  }
+
+  .contact--heading {
+    animation: none;
+  }
+
+  .contact-heading-container::after {
+    animation: none;
+    visibility: hidden;
+  }
+  .contact .centralized-container {
     height: 100vh;
     justify-content: center;
     align-items: center;
   }
-  
+
   .contact-form {
     width: 80%;
     gap: 5vh;
@@ -196,4 +255,3 @@
     font-size: 1.5rem;
   }
 }
-
