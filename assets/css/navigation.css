@@ -122,17 +122,17 @@ nav ul li:nth-of-type(5) {
   width: 100%;
   height: 100px;
   position: absolute;
-  z-index:9999;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.6px);
--webkit-backdrop-filter: blur(5.6px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .logo-container a {
@@ -140,6 +140,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s;
 }
 
 .logo {
@@ -171,7 +172,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   transition: width 0.4s;
 }
 
-.active{
+.active {
   background-color: rgba(145, 143, 143, 0.7);
   border-radius: 50%;
 }
@@ -179,16 +180,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* media query for resposivisity */
 
 @media only screen and (min-width: 768px) {
-
-
   nav ul {
     gap: 4vh;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-
-  .active{
+  .active {
     background-color: var(--light);
     border-radius: 50%;
   }
@@ -203,7 +201,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     position: fixed;
     top: 70px;
     left: 70px;
-    width:100px;
+    width: 100px;
     height: 100px;
   }
 
