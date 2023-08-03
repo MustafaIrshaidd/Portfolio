@@ -34,13 +34,13 @@ header .centralized-container {
   transition-delay: 0.3s;
   text-align: center;
   font-family: "Inter", sans-serif;
-  color:white;
-  width:min-content
+  color: white;
+  width: min-content;
 }
 
 .header-content--hello {
   font-size: 3rem;
-  padding-bottom:0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .header-content--hello span {
@@ -50,18 +50,13 @@ header .centralized-container {
 }
 
 .header-content h1 {
+  position: relative;
   margin-bottom: 1.2rem;
   width: fit-content;
   font-size: 1.7rem;
   font-weight: 600;
   overflow: hidden;
-  border-right: .1em solid white;
-  /* Ensures the content is not revealed until the animation */
   white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: auto;
-  /* Adjust as needed */
-  animation: typing 3.5s steps(10, end),blink-caret 1s alternate infinite;
 }
 
 .header-content h1::before {
@@ -70,29 +65,10 @@ header .centralized-container {
   font-size: 1.3rem;
 }
 
-
-/* .header-content h1::after {
-  content:'';
-  top:50%;
-  right:0;
-  transform: translate(-50%,-50%);
-  height: 100%;
-  background-color: white;
-  width: 1px;
-  position: absolute;
-  /* Ensures the content is not revealed until the animation */
-  
-  
-  /* Adjust as needed */
-  /* animation: typing 3.5s steps(10, end),blink-caret 1s alternate infinite;
-} */ 
-
-
-
 .header-content--p {
-  padding-top:1.5rem;
+  padding-top: 1.5rem;
   font-size: 1.3rem;
-  width:100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -102,21 +78,16 @@ header .centralized-container {
   header .centralized-container {
     flex-direction: row-reverse;
     justify-content: center;
-    gap:5%;
-    
+    gap: 5%;
   }
 
   .header-content {
     text-align: start;
-    
   }
 
   .header-content h1 {
-    margin:0;
-    
+    margin: 0;
   }
-
-
 
   .header-img--sizing {
     width: 300px;
@@ -126,10 +97,9 @@ header .centralized-container {
   .header-content--hello {
     font-size: 4rem;
     width: fit-content;
-    margin:0 !important;
+    margin: 0 !important;
     margin-bottom: 1.2rem;
-    padding-bottom:1.5rem;
-    
+    padding-bottom: 1.5rem;
   }
   .header-content--p {
     margin: 0;
