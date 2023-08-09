@@ -20,7 +20,7 @@ const detectScrollUp = () => {
 };
 
 const getElementPositions = () => {
-  document.querySelectorAll("header, section").forEach((element, index) => {
+  document.querySelectorAll("header, section,footer").forEach((element, index) => {
     const rect = element.getBoundingClientRect();
     const yOffset = rect.top + window.scrollY;
 
@@ -88,12 +88,14 @@ function reveal(event) {
       }
     }
 
+    document.querySelector(`.bg-overlay-${value}`).style.opacity = 1;
+
     navImgs.forEach((img) => {
       img.classList.remove("active");
     });
     navImgs[value - 1].classList.add("active");
 
-    document.querySelector(`.bg-overlay-${value}`).style.opacity = 1;
+    
   }
 }
 

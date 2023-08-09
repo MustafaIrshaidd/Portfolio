@@ -1,6 +1,5 @@
 .projects {
   scroll-snap-align: start;
-  box-sizing: content-box;
 }
 
 .projects .centralized-container {

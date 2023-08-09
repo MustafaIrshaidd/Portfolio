@@ -115,6 +115,13 @@ body::-webkit-scrollbar {
   z-index: -6;
 }
 
+.bg-overlay-6 {
+  background-image: url(../images/bg-sections/bg-projects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -7;
+}
+
 /* Animations */
 
 .hidden {

@@ -1,0 +1,7 @@
+footer{
+    scroll-snap-align: start;
+}
+
+footer .centralized-container{
+    min-height: 100vh;
+}
