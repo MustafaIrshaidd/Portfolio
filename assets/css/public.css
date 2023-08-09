@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .bg-overlay-6 {
-  background-image: url(../images/bg-sections/bg-projects.png);
+  background-image: url(../images/bg-sections/bg-home.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -7;
