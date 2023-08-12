@@ -116,7 +116,7 @@ nav ul li:nth-of-type(5) {
   transition: transform 0.9s;
 }
 
-nav ul li a:hover {
+nav ul li:hover a {
   transform: rotate(360deg) scale(1.2);
 }
 

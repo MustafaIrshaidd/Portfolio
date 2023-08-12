@@ -1,0 +1,155 @@
+footer {
+  scroll-snap-align: start;
+  font-family: "Inter", sans-serif;
+}
+
+footer .centralized-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-content--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12vh;
+  width: fit-content;
+}
+
+.footer-content--container h2 {
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  gap: 5vh;
+  width: 100%;
+}
+
+.footer-content:nth-child(1),
+.footer-content:nth-child(2) {
+  width: 100%;
+}
+
+.footer-content--col-1,
+.footer-content--col-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content--col-1 {
+  width: fit-content;
+  flex-direction: column;
+
+  gap: 3vh;
+}
+
+.footer-content--col-2 {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-content--col-1 a {
+  display: inline-block;
+  line-height: 1.5rem;
+  color: white;
+  position: relative;
+  padding-left: 40px;
+  transition: all 0.3s;
+}
+.footer-content--col-1 a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all 0.6s;
+}
+
+.footer-content--col-1 a:hover::after {
+  width: 100%;
+  background-color: white;
+}
+
+.footer-content--col-1 a::before {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Font Awesome 5 Free";
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-content--col-1 a:nth-of-type(1):before {
+  content: "\f0e0";
+}
+
+.footer-content--col-1 a:nth-of-type(2):before {
+  content: "\f279";
+}
+
+.footer-content--col-1 a:nth-of-type(3):before {
+  content: "\f095";
+  font-weight: 600;
+}
+
+.footer-content--col-1 a:nth-of-type(4):before {
+  content: "\f1c1";
+}
+
+.footer-content--col-2 a {
+  display: block;
+  height: 35px;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  transition: all 1s;
+}
+
+.footer-contnet--link {
+  cursor: pointer;
+}
+
+.footer-contnet--link:hover a {
+  transform: rotate3d(1, 1, 1, 360deg);
+  background-color: white;
+  color: black;
+}
+
+.trademark {
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.trademark p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-content--container {
+    width: 50%;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-content--col-2 {
+    flex-direction: column;
+  }
+}
