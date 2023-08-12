@@ -94,8 +94,6 @@ function reveal(event) {
       img.classList.remove("active");
     });
     navImgs[value - 1].classList.add("active");
-
-    
   }
 }
 

@@ -1,430 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+    <!-- Font Awesome CDN 6.4.0 -->
 
-  <!-- Font Awesome CDN 6.4.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
 
-  <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/public.css" />
+    <link rel="stylesheet" href="src/css/navigation.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/education.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/public.css" />
-  <link rel="stylesheet" href="assets/css/navigation.css" />
-  <link rel="stylesheet" href="assets/css/header.css" />
-  <link rel="stylesheet" href="assets/css/about.css" />
-  <link rel="stylesheet" href="assets/css/education.css" />
-  <link rel="stylesheet" href="assets/css/projects.css" />
-  <link rel="stylesheet" href="assets/css/contact.css" />
-  <link rel="stylesheet" href="assets/css/footer.css">
-</head>
+  <body>
+    <!-- HTML Content -->
 
-<body>
-  <!-- HTML Content -->
+    <!-- Navigation -->
 
-  <!-- Navigation -->
-
-  <nav>
-    <!-- Logo -->
-    <div class="logo-container">
-      <a href="#header"><img class="logo" src="assets/images/icons/logo.png" alt="logo not found" /></a>
-    </div>
-
-    <!-- Links -->
-    <input type="checkbox" id="menuBtn" />
-    <ul id="navBtns">
-      <label class="nav-icon" for="menuBtn"></label>
-      <li>
-        <a href="#header"><img src="assets/images/icons/homeIcon.png" alt="icon not found" /></a>
-      </li>
-      <li>
-        <a href="#aboutMe"><img src="assets/images/icons/aboutIcon.png" alt="icon not found" /></a>
-      </li>
-      <li>
-        <a href="#education"><img src="assets/images/icons/gradHatIcon.png" alt="icon not found" /></a>
-      </li>
-      <li>
-        <a href="#projects"><img src="assets/images/icons/eyeIcon.png" alt="icon not found" /></a>
-      </li>
-      <li>
-        <a href="#contact"><img src="assets/images/icons/msgIcon.png" alt="icon not found" /></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- End Of Navigation -->
-
-  <main class="main">
-    <!-- Header -->
-
-    <header id="header" class="header">
-      <div class="centralized-container">
-        <div class="header-img hidden">
-          <img class="header-img--sizing" src="assets/images/headerImg.jpeg" height="400px" width="400px" alt="" />
-        </div>
-        <div class="header-content hidden">
-          <p class="header-content--hello">Hello <span>!</span></p>
-
-          <h1>Mustafa Irshaid</h1>
-
-          <p class="header-content--p">
-            A dedicated, self-taught Computer Engineer in pursuit of success
-            through continuous learning and high motivation.
-          </p>
-        </div>
+    <nav>
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="#header"
+          ><img
+            class="logo"
+            src="assets/images/icons/logo.png"
+            alt="logo not found"
+        /></a>
       </div>
-    </header>
 
-    <!-- End Of Header -->
+      <!-- Links -->
+      <input type="checkbox" id="menuBtn" />
+      <ul id="navBtns">
+        <label class="nav-icon" for="menuBtn"></label>
+        <li>
+          <a href="#header"
+            ><img src="assets/images/icons/homeIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#aboutMe"
+            ><img src="assets/images/icons/aboutIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#education"
+            ><img
+              src="assets/images/icons/gradHatIcon.png"
+              alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#projects"
+            ><img src="assets/images/icons/eyeIcon.png" alt="icon not found"
+          /></a>
+        </li>
+        <li>
+          <a href="#contact"
+            ><img src="assets/images/icons/msgIcon.png" alt="icon not found"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-    <!-- About Me -->
+    <!-- End Of Navigation -->
 
-    <section class="about-me" id="aboutMe">
-      <div class="centralized-container">
-        <div class="about-me-img hidden">
-          <img src="assets/images/aboutme.png" alt="about me image not found" />
+    <main class="main">
+      <!-- Header -->
+
+      <header id="header" class="header">
+        <div class="centralized-container">
+          <div class="header-img hidden">
+            <img
+              class="header-img--sizing"
+              src="assets/images/headerImg.jpeg"
+              height="400px"
+              width="400px"
+              alt="" />
+          </div>
+          <div class="header-content hidden">
+            <p class="header-content--hello">Hello <span>!</span></p>
+
+            <h1>Mustafa Irshaid</h1>
+
+            <p class="header-content--p">
+              A dedicated, self-taught Computer Engineer in pursuit of success
+              through continuous learning and high motivation.
+            </p>
+          </div>
         </div>
-        <div class="about-me-body hidden">
-          <h2>Who Am I <span>?!</span></h2>
+      </header>
 
-          <p>
-            I’am a computer engineering student in my 4th year. I love
-            learning new things and enjoy gaming, reading books, and exploring
-            business ideas.
-          </p>
+      <!-- End Of Header -->
+
+      <!-- About Me -->
+
+      <section class="about-me" id="aboutMe">
+        <div class="centralized-container">
+          <div class="about-me-img hidden">
+            <img
+              src="assets/images/aboutme.png"
+              alt="about me image not found" />
+          </div>
+          <div class="about-me-body hidden">
+            <h2>Who Am I <span>?!</span></h2>
+
+            <p>
+              I’am a computer engineering student in my 4th year. I love
+              learning new things and enjoy gaming, reading books, and exploring
+              business ideas.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- End Of About Me -->
+      <!-- End Of About Me -->
 
-    <!-- Education -->
+      <!-- Education -->
 
-    <section class="education" id="education">
-      <div class="centralized-container">
-        <div class="education-header-container">
-          <h2 class="hidden">Education</h2>
-        </div>
+      <section class="education" id="education">
+        <div class="centralized-container">
+          <div class="education-header-container">
+            <h2 class="hidden">Education</h2>
+          </div>
 
-        <ul class="education-intervals">
-          <li>
-            <div class="education-intervals-links-container">
-              <a class="education-intervals-links" href="#">2023</a>
-            </div>
-            <div class="education-content">
-              <ul class="hidden">
-                <li>Interned at Foothill, a leading tech company, gaining invaluable real-world experience and
-                  collaborating with talented professionals.</li>
-                <li>
-                  Completed a comprehensive Node.js bootcamp, excelling in server-side JavaScript and building RESTful
-                  APIs.
-                </li>
-                <li>
-                  Learned React through Knowledge Academy's course while working on the Sarahah project.
-                </li>
-                <li>
-                  Collaborated with a team of four on an exciting stage project focused on designing a coworking space
-                  called " Stage ".
-                </li>
-                <li>
-                  Embraced challenges and contributed to open-source projects,
-                  enhancing programming skills.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="education-intervals-links-container">
-              <a class="education-intervals-links" href="#">2022</a>
-            </div>
-            <div class="education-content hidden">
-              <ul class="hidden">
-                <li>
-                  As a dedicated front-end developer, I have been actively enhancing my skills in HTML, CSS, and
-                  JavaScript to create stunning and interactive web interfaces.
-                </li>
-                <li>
-                  Through website cloning projects, I gain valuable hands-on experience that helps me comprehend how
-                  real-world applications are structured and function.
-                </li>
-                <li>
-                  Enrolled in a comprehensive full-stack course at the esteemed Knowledge Academy to broaden my
-                  understanding of web development.
-                </li>
-                <li>
-                  Actively engaged in solving coding challenges on LeetCode, honing my problem-solving and coding
-                  skills.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="education-intervals-links-container">
-              <a class="education-intervals-links" href="#">2021</a>
-            </div>
-            <div class="education-content hidden">
-              <ul class="hidden">
-                <li>
-                  Developed skills in customer service, team leadership, and sales management through practical
-                  experience.
-                </li>
-                <li>
-                  Managed the position while pursuing my Bachelor's Degree.
-                </li>
-                <li>
-                  Worked as a Sales Supervisor at ZikZak Store.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div class="education-intervals-links-container">
-              <a class="education-intervals-links" href="#">2019</a>
-            </div>
-            <div class="education-content hidden">
-              <ul class="hidden">
-                <li>
-                  Actively participated in GDG (Google Developer Groups) as a photographer.
-                </li>
-                <li>
-                  Simultaneously, I worked as a Call Center Agent at Reach for 1 year.
-                </li>
-                <li>
-                  Pursued my passion for computers by enrolling as a Computer Engineering student at Alnajah University.
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- End Of Education -->
-
-    <!-- Projects -->
-
-    <section class="projects" id="projects">
-      <div class="centralized-container">
-        <h2 class="projects--heading">Projects</h2>
-        <ul class="projects-cards--container">
-          <li class="project-card hidden">
-            <div class="project-card--inner">
-              <div class="project-card--front">
-                <img class="project-card--img" src="assets/images/projects/landing-pages.png"
-                  alt="project image not found" />
+          <ul class="education-intervals">
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2023</a>
               </div>
-              <div class="project-card--back">
-                <h3 class="project-card--back--heading">Landing Pages</h3>
-                <p class="project-card--back--paragraph">
-                  Landing pages Convert visitors to customers through targeted
-                  call-to-action.
-                </p>
-                <ul class="project-card--back--icons">
+              <div class="education-content">
+                <ul class="hidden">
                   <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    Interned at Foothill, a leading tech company, gaining
+                    invaluable real-world experience and collaborating with
+                    talented professionals.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    Completed a comprehensive Node.js bootcamp, excelling in
+                    server-side JavaScript and building RESTful APIs.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    Learned React through Knowledge Academy's course while
+                    working on the Sarahah project.
+                  </li>
+                  <li>
+                    Collaborated with a team of four on an exciting stage
+                    project focused on designing a coworking space called "
+                    Stage ".
+                  </li>
+                  <li>
+                    Embraced challenges and contributed to open-source projects,
+                    enhancing programming skills.
                   </li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="project-card hidden">
-            <div class="project-card--inner">
-              <div class="project-card--front">
-                <img class="project-card--img" src="assets/images/projects/hospital.png"
-                  alt="project image not found" />
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2022</a>
               </div>
-              <div class="project-card--back">
-                <h3 class="project-card--back--heading">Medical Center</h3>
-                <p class="project-card--back--paragraph">
-                  Providing diverse healthcare services and personalized care
-                  for your well-being.
-                </p>
-                <ul class="project-card--back--icons">
+              <div class="education-content hidden">
+                <ul class="hidden">
                   <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    As a dedicated front-end developer, I have been actively
+                    enhancing my skills in HTML, CSS, and JavaScript to create
+                    stunning and interactive web interfaces.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    Through website cloning projects, I gain valuable hands-on
+                    experience that helps me comprehend how real-world
+                    applications are structured and function.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    Enrolled in a comprehensive full-stack course at the
+                    esteemed Knowledge Academy to broaden my understanding of
+                    web development.
+                  </li>
+                  <li>
+                    Actively engaged in solving coding challenges on LeetCode,
+                    honing my problem-solving and coding skills.
                   </li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="project-card hidden">
-            <div class="project-card--inner">
-              <div class="project-card--front">
-                <img class="project-card--img" src="assets/images/projects/grey-scale.png"
-                  alt="project image not found" />
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2021</a>
               </div>
-              <div class="project-card--back">
-                <h3 class="project-card--back--heading">Grey Scale</h3>
-                <p class="project-card--back--paragraph">
-                  Embracing elegance and simplicity with a monochromatic color
-                  palette for a sophisticated user experience.
-                </p>
-                <ul class="project-card--back--icons">
+              <div class="education-content hidden">
+                <ul class="hidden">
                   <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    Developed skills in customer service, team leadership, and
+                    sales management through practical experience.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    Managed the position while pursuing my Bachelor's Degree.
+                  </li>
+                  <li>Worked as a Sales Supervisor at ZikZak Store.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="education-intervals-links-container">
+                <a class="education-intervals-links" href="#">2019</a>
+              </div>
+              <div class="education-content hidden">
+                <ul class="hidden">
+                  <li>
+                    Actively participated in GDG (Google Developer Groups) as a
+                    photographer.
                   </li>
                   <li>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    Simultaneously, I worked as a Call Center Agent at Reach for
+                    1 year.
+                  </li>
+                  <li>
+                    Pursued my passion for computers by enrolling as a Computer
+                    Engineering student at Alnajah University.
                   </li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="project-card hidden">
-            <div class="project-card--inner">
-              <div class="project-card--front">
-                <img class="project-card--img" src="assets/images/projects/stage.png" alt="project image not found" />
-              </div>
-              <div class="project-card--back">
-                <h3 class="project-card--back--heading">Stage</h3>
-                <p class="project-card--back--paragraph">
-                  Collaborative, flexible, and productive workspaces for
-                  diverse professionals.
-                </p>
-                <ul class="project-card--back--icons">
-                  <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="project-card hidden">
-            <div class="project-card--inner">
-              <div class="project-card--front">
-                <img class="project-card--img" src="assets/images/projects/sarahah.png" alt="project image not found" />
-              </div>
-              <div class="project-card--back">
-                <h3 class="project-card--back--heading">Sarahah</h3>
-                <p class="project-card--back--paragraph">
-                  Embrace candid, anonymous messaging for meaningful and
-                  constructive interactions.
-                </p>
-                <ul class="project-card--back--icons">
-                  <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- End Of Projects -->
-
-    <!-- Contact Me -->
-
-    <section class="contact" id="contact">
-      <div class="centralized-container">
-        <div class="contact-heading-container">
-          <h2 class="contact--heading">Let's Collab !</h2>
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <form class="contact-form" method="post">
+      <!-- End Of Education -->
 
-          <div class="name">
-            <div class="first-name hidden">
-              <input type="text" id="firstName" />
-              <label for="firstName">First Name</label>
-            </div>
-            <div class="last-name hidden">
-              <input type="text" id="lastName" />
-              <label for="lastName">Last Name</label>
-            </div>
-          </div>
-          <div class="email hidden">
-            <input type="email" id="email" />
-            <label for="email">Email</label>
-          </div>
-          <div class="message hidden">
-            <textarea rows="3" id="message"></textarea>
-            <label for="message">Send Message</label>
-          </div>
-          <button class="contact-me hidden">Contact Me</button>
-        </form>
-      </div>
-    </section>
+      <!-- Projects -->
 
-    <!-- End Of Contact Me -->
+      <section class="projects" id="projects">
+        <div class="centralized-container">
+          <h2 class="projects--heading">Projects</h2>
+          <ul class="projects-cards--container">
+            <li class="project-card hidden">
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="assets/images/projects/landing-pages.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Landing Pages</h3>
+                  <p class="project-card--back--paragraph">
+                    Landing pages Convert visitors to customers through targeted
+                    call-to-action.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="project-card hidden">
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="assets/images/projects/hospital.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Medical Center</h3>
+                  <p class="project-card--back--paragraph">
+                    Providing diverse healthcare services and personalized care
+                    for your well-being.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="project-card hidden">
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="assets/images/projects/grey-scale.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Grey Scale</h3>
+                  <p class="project-card--back--paragraph">
+                    Embracing elegance and simplicity with a monochromatic color
+                    palette for a sophisticated user experience.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="project-card hidden">
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="assets/images/projects/stage.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Stage</h3>
+                  <p class="project-card--back--paragraph">
+                    Collaborative, flexible, and productive workspaces for
+                    diverse professionals.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="project-card hidden">
+              <div class="project-card--inner">
+                <div class="project-card--front">
+                  <img
+                    class="project-card--img"
+                    src="assets/images/projects/sarahah.png"
+                    alt="project image not found" />
+                </div>
+                <div class="project-card--back">
+                  <h3 class="project-card--back--heading">Sarahah</h3>
+                  <p class="project-card--back--paragraph">
+                    Embrace candid, anonymous messaging for meaningful and
+                    constructive interactions.
+                  </p>
+                  <ul class="project-card--back--icons">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="centralized-container">
-        <div class="footer-content--container">
-          <div class="footer-content">
-            <div class="footer-content--col-1">
-              <a href="#">mustafa.irshaid.113@gmail.com</a>
-              <a href="#">Palestine - Nablus - Street 420</a>
-              <a href="#">+970 595 829 020</a>
-            </div>
-            <div class="footer-content--col-2">
-              <div class="footer-contnet--link">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </div>
-              <div class="footer-contnet--link">
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              </div>
-              <div class="footer-contnet--link">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </div>
-              <div class="footer-contnet--link">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
+      <!-- End Of Projects -->
+
+      <!-- Contact Me -->
+
+      <section class="contact" id="contact">
+        <div class="centralized-container">
+          <div class="contact-heading-container">
+            <h2 class="contact--heading">Let's Collab !</h2>
           </div>
-          <div class="trademark">
-            <p>&copy; 2023 Mustafa Irshaid. All rights reserved.</p>
+
+          <form class="contact-form" method="post">
+            <div class="name">
+              <div class="first-name hidden">
+                <input type="text" id="firstName" />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="last-name hidden">
+                <input type="text" id="lastName" />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="email hidden">
+              <input type="email" id="email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="message hidden">
+              <textarea rows="3" id="message"></textarea>
+              <label for="message">Send Message</label>
+            </div>
+            <button class="contact-me hidden">Send Demo</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- End Of Contact Me -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="centralized-container">
+          <div class="footer-content--container">
+            <h2 class="hidden">Contact Me</h2>
+            <div class="footer-content hidden">
+              <div class="footer-content--col-1">
+                <a
+                  href="mailto:mustafa.irshaid.113@gmail.com?subject=Portoflio Feedback&body=Feel free to write anything !"
+                  >mustafa.irshaid.113@gmail.com</a
+                >
+                <a
+                  href="https://www.google.com/maps/place/Foothill+Technology+Solutions/@32.2178458,35.2689479,19z/data=!4m6!3m5!1s0x151ce188c8f94ee5:0xc83757499aeaa18f!8m2!3d32.2178459!4d35.2694892!16s%2Fg%2F11fsm3f5gr?hl=en-US&entry=ttu"
+                  target="_blank"
+                  >Palestine - Nablus - Street 420</a
+                >
+                <a href="tel:0595829020">+970 595 829 020</a>
+                <a href="assets/resume/Mustafa_Irshaid_Resume.pdf" download>Download CV</a>
+              </div>
+              <div class="footer-content--col-2">
+                <div class="footer-contnet--link">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="footer-contnet--link">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="footer-contnet--link">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-contnet--link">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="trademark">
+              <p>&copy; 2023 Mustafa Irshaid. All rights reserved.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- End Of Footer -->
-  </main>
+      </footer>
+      <!-- End Of Footer -->
+    </main>
 
-  <!-- Backgrounds -->
+    <!-- Backgrounds -->
 
-  <div class="bg-overlay bg-overlay-1"></div>
-  <div class="bg-overlay bg-overlay-2"></div>
-  <div class="bg-overlay bg-overlay-3"></div>
-  <div class="bg-overlay bg-overlay-4"></div>
-  <div class="bg-overlay bg-overlay-5"></div>
-  <div class="bg-overlay bg-overlay-6"></div>
+    <div class="bg-overlay bg-overlay-1"></div>
+    <div class="bg-overlay bg-overlay-2"></div>
+    <div class="bg-overlay bg-overlay-3"></div>
+    <div class="bg-overlay bg-overlay-4"></div>
+    <div class="bg-overlay bg-overlay-5"></div>
+    <div class="bg-overlay bg-overlay-6"></div>
 
-  <script src="./assets/js/index.js"></script>
-</body>
-
+    <script src="./src/js/index.js"></script>
+  </body>
 </html>
