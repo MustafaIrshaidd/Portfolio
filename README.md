@@ -6,7 +6,7 @@ I developed a portfolio project, which is a curated compilation of my work, demo
 
 Creating a Vanilla Web Experience: Embracing Core JavaScript, CSS, and HTML.
 
-[Portfolio Live Here](https://mustafairshaidd.github.io/Portfolio/)
+[Portfolio Is Live Here](https://mustafairshaidd.github.io/Portfolio/)
 
 ## Tools
 
